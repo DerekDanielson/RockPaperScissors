@@ -6,7 +6,7 @@ let userChoice
 let computerChoice
 let result
 
-//User choice displayed on click
+//User choice selection and display
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = userChoice
@@ -14,6 +14,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     getResult()
 }))
 
+//Generate random computer choice
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3)
     
