@@ -16,7 +16,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
 //Generate random computer choice
 function generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3)
+    const randomNumber = Math.floor(Math.random() * 4)
     
     if (randomNumber === 1) {
         computerChoice = 'Rock'
